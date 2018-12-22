@@ -69,6 +69,69 @@ body {
   }
 }
 
+#footnav{
+  width: 100%;
+  height: 0.4rem;
+  margin-top: .2rem;
+  background-color: #ebebeb;
+  background: linear-gradient(#fff 0%,#ebebeb 100%);
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ccc;
+  font-size: 14px;
+  font-family: Arial;
+  line-height: .4rem;
+  padding-left: .08rem;
+  color: black;
+  a {
+    color: black;
+  }
+}
+
+.sitenavFooter {
+  width: 100%;
+  background-color: #232a34;
+  height: .98rem;
+  // display: flex;
+  .foot_top {
+    height: 0.34rem;
+    margin-top: .25rem;
+    a {
+      display: inline-block;
+      width: 30%;
+      height: 0.34rem;
+      line-height: .34rem;
+      border-left: 1px solid #727272;
+      border-bottom: 1px solid #727272;
+      text-align: center;
+      float: left;
+      &:nth-child(3){
+        width: 40%;
+      }
+    }
+  }
+  .footer {
+    padding: .15rem 0;
+    text-align: center;
+    height: 0.64rem;
+    p {
+      height: 0.17rem;
+      line-height: 0.17rem;
+      &:nth-child(1){
+        a{
+          color: #bebebe;
+          font-size: 12px;
+          &:nth-child(1){
+            color: @main-color;
+          }
+        }
+      }
+      &::nth-child(2){
+        color: #666;
+      }
+    }
+  }
+}
+
 
 
 
