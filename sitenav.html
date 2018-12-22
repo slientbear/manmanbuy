@@ -7,14 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="lib/mui/css/mui.css">
     <link rel="stylesheet" href="lib/fontAwesome/css/font-awesome.css">
-    <link rel="stylesheet/less" href="less/brand.less">
+    <link rel="stylesheet/less" href="less/sitenav.less">
     <link rel="stylesheet/less" href="less/base.less">
     <script src="lib/less/less.js"></script>
     <script src="js/rem.js"></script>
     <title>Document</title>
 </head>
 
-<body>
+<body style="background-color: #f1f1f1">
     <header id="header" class="mui-content sitenavLinkHeader">
         <div class="mui-row">
             <div class="mui-col-xs-2 icon-back">
@@ -34,7 +34,7 @@
             </div>
         </div>
     </header>
-    <div id="sitenavLink ">
+    <div id="sitenavLink">
         <a href="http://union.click.jd.com/jdc?e=
         p=AiIBZRprFDJWWA1FBCVbV0IUEEULXg1cAAQJS14M…xkSUGZZHkcCaUJQWiUXVyUDIgRUHF8XCxUDVytrc38i
         t=W1dCFBBFC14NXAAECUteDA%3D%3D">
@@ -42,10 +42,20 @@
             <span>京东商城</span>
         </a>
     </div>
+    <script id="sitenavTpl" type="text/html">
+        {{each result value}}
+            <a href="{{value.navHref}}" navid="{{value.navId}}">
+                <img src="{{value.navImg}}" alt="">
+                <span>{{value.navTitle}}</span>
+            </a>
+        {{/each}}
+    </script>
     <script src="lib/zepto/zepto.min.js"></script>
+    <script src="lib/zepto/fx.js"></script>
+    <script src="lib/zepto/fx_methods.js"></script>
     <script src="lib/mui/js/mui.js"></script>
     <script src="lib/artTemplate/template-web.js"></script>
-    <script src="js/brand.js"></script>
+    <script src="js/sitenav.js"></script>
 </body>
 
 </html>
